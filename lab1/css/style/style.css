@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+}
+.container {
+    margin: 0 auto;
+    display: flexbox;
+    justify-content: center;
+}
+.panel {
+    width: 940px;
+    height: 40px;
+    padding-top: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+.escape {
+    width: 92px;
+    height: 26px;
+    font-family: "Lora";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+}
+.buttons {
+    width: 376.61px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons a {
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+}
+
+.head {
+    width: 1440px;
+    height: 360px;
+    margin-top: 0;
+}
+.main_title {
+    width: 498px;
+    height: 51px;
+    margin-top: 82px;
+    font-family: "Lora";
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.subtitle {
+    width: 504px;
+    height: 20px;
+    margin-top: 20px;
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.main {
+    width: 1440px;
+    height: 1706px;
+    margin-top: 0px;
+}
+.main_photo {
+    width: 100%;
+}
+.text {
+    width: 960px;
+    height: 1431px;
+    margin-top: 140px;
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.footer {
+    width: 1440px;
+    height: 89px;
+    margin-top: 0px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)), url('/lab1/css/images/footer.jpg');
+} 
+.down_panel {
+    width: 960px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 31px;
+}   
+.down_escape {
+    width: 92px;
+    height: 26px;
+    margin-top: 3px;    
+    font-family: "Lora";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+}
+.down_buttons {
+    width: 245px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.down_buttons a{
+    font-family: "Lora";
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
