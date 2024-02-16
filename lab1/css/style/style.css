@@ -37,7 +37,7 @@ body {
     line-height: 20px;
     letter-spacing: 0.6px;
     text-decoration: none;
-    color: rgba(46, 46, 46, 1);
+    color: rgb(46, 46, 46);
 }
 
 .head {
@@ -70,7 +70,7 @@ body {
 
 .main {
     width: 1440px;
-    height: 1706px;
+    height: auto;
     margin-top: 0px;
 }
 .main_photo {
@@ -78,19 +78,19 @@ body {
 }
 .text {
     width: 960px;
-    height: 1431px;
+   
     margin-top: 140px;
     font-family: "Oxygen";
     font-weight: 400;
     font-size: 24px;
     line-height: 35px;
-    color: rgba(16, 19, 21, 1);
+    color: rgb(16, 19, 21);
 }
 
 .footer {
     width: 1440px;
     height: 89px;
-    margin-top: 0px;
+    margin-top: 135px;
     background: linear-gradient(
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)), 
