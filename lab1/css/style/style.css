@@ -118,7 +118,6 @@ body {
     background-image: url("/css/images/Escape_down.svg");
     display: inline-block;
     vertical-align: bottom;
-    margin-bottom: -5px;
 }
 .down_buttons {
     width: 100%;
