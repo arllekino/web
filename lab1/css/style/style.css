@@ -3,19 +3,23 @@ body {
     overflow-x: hidden;
     width: 100%;
 }
+
 .panel {
     width: 940px;
     height: 40px;
     padding-top: 17px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
 }
+
 .escape {
-    width: 89px;    
+    width: 89px;
     display: inline-block;
     vertical-align: bottom;
     margin-bottom: -5px;
+    text-decoration: none;
 }
+
 .buttons {
     vertical-align: bottom;
     display: inline-block;
@@ -23,6 +27,7 @@ body {
     width: 100%;
     text-align: right;
 }
+
 .buttons a {
     font-family: "Oxygen";
     font-weight: 400;
@@ -31,15 +36,19 @@ body {
     text-decoration: none;
     color: rgb(46, 46, 46);
 }
+
 .home {
     padding-right: 41px;
 }
+
 .categories {
-    padding-right: 41px;    
+    padding-right: 41px;
 }
+
 .about {
     padding-right: 41px;
 }
+
 .contact {
     padding-right: 20px;
 }
@@ -50,7 +59,8 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.main_title {
+
+.main-title {
     width: 498px;
     height: 51px;
     margin-top: 82px;
@@ -63,6 +73,7 @@ body {
     letter-spacing: 2px;
     text-align: center;
 }
+
 .subtitle {
     width: 504px;
     height: 20px;
@@ -79,15 +90,17 @@ body {
 
 .main {
     height: auto;
-    margin-top: 0px;    
+    margin-top: 0px;
     padding-bottom: 135px;
 }
-.main_photo {
+
+.main-photo {
     width: 100%;
     height: 100%;
 }
+
 .text {
-   
+
     width: auto;
     margin: 0px 240px 0 240px;
     padding-top: 140px;
@@ -100,33 +113,36 @@ body {
 
 .footer {
     height: 89px;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5), 
-        rgba(0, 0, 0, 0.5)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
         url("/css/images/footer.jpg");
-} 
-.down_panel {
+}
+
+.bottom-panel {
     width: 960px;
     height: 34px;
     padding-top: 31px;
     margin-left: auto;
     margin-right: auto;
-}   
-.down_escape {
+}
+
+.bottom-escape {
     width: 89px;
     height: 26px;
     background-image: url("/css/images/Escape_down.svg");
     display: inline-block;
     vertical-align: bottom;
 }
-.down_buttons {
+
+.bottom-buttons {
     width: 100%;
     display: inline-block;
     vertical-align: bottom;
     margin-right: -100%;
     text-align: right;
 }
-.down_buttons a {
+
+.bottom-buttons a {
     font-family: "Oxygen";
     font-weight: 400;
     font-size: 11px;
@@ -135,15 +151,19 @@ body {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
-.down_home {
+
+.bottom-home {
     padding-right: 20px;
 }
-.down_categories {
-    padding-right: 20px;    
-}
-.down_about {
+
+.bottom-categories {
     padding-right: 20px;
 }
-.down_contact {
+
+.bottom-about {
+    padding-right: 20px;
+}
+
+.bottom-contact {
     padding-right: 10px;
 }
