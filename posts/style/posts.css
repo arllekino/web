@@ -1,0 +1,311 @@
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: none;
+}
+
+.head {
+    height: 100%;
+    width: 100%;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+}
+
+.head__photo {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.head__panel {
+    min-width: 940px;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: absolute;
+    
+}
+
+.head__panel__escape {
+    width: 89px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.head__panel__buttons {
+    width: 377px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head__panel__buttons a {
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.head__title {
+    width: 940px;
+    height: 159px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 184px;
+    display: flex;
+    justify-content: center;
+}
+
+.head__title__main-title {
+    height: 51px;
+    width: 498px;
+    margin-top: 0;
+    text-align: center;
+    font-family:"Lora";
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.head__title__subtitle {
+    height: 20px;
+    width: 504px;
+    margin-top: 64px;
+    position: absolute;
+    text-align: center;
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.63);
+}
+
+.head__title__latest-posts {
+    height: 44px;
+    width: 167px;
+    position: absolute;
+    margin-top: 115px;
+    background-color: rgb(221, 120, 61);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.main-panel  {
+    height: 65px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-panel__buttons {
+    height: 46px;
+    width: 960px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.main-panel__buttons a {
+    height: 46px;
+    width: 139px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Lora";
+    font-weight: 400;
+    font-size: 14px;
+    list-style: 20px;
+    color: rgb(128, 136, 1);
+    text-decoration: none;
+}
+
+.main {
+    height: 1225px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+}
+
+.main__featured-posts {
+    height: 414px;
+    width: 940px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main__featured-posts__title {
+    height: 44px;
+    width: 940px;
+    margin-top: 60px;
+    text-align: center;
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    color: rgb(46, 46, 46);
+    
+}
+
+.main__featured-posts__posts {
+    height: 280px;
+    width: 940px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.main__featured-posts__posts__post {
+    height: 280px;
+    width: 460px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main__featured-posts__posts__post__title {
+    margin-top: 157px;
+    margin-left: 20px;
+    font-family: "Lora";
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.main__featured-posts__posts__post__line {
+    margin-top: 6px;
+    margin-left: 20px;
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main__featured-posts__posts__post__description {
+    width: 420px;
+    height: 25px;
+    margin-top: 12px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__featured-posts__posts__post__description__autor {
+    width: auto;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main__featured-posts__posts__post__description__autor__photo {
+    height: auto;
+    width: auto;
+    border-radius: 13px;
+}
+
+.main__featured-posts__posts__post__description__autor__name {
+    margin-left: 10px;
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main__featured-posts__posts__post__description__date {
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.main__featured-posts__posts__post_the-road-ahead {
+    background-image: url(./img/the-road-ahead.png); 
+}
+
+.main__featured-posts__posts__post_from-top-down {
+    background-image: url(./img/from-top-down.png);
+}
+
+.main__most-recent {
+    height: 752px;
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.main__most-recent__title {
+    height: 44px;
+    width: 100%;
+    margin-top: 60px;
+    font-family: "Oxygen";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    color: rgb(46, 46, 46);
+}
+
+.main__most-recent__posts {
+    height: 632px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main__most-recent__posts__post {
+    height: 291px;
+    width: 296px;
+    text-decoration: none;
+}
+
+.main__most-recent__posts__post__picture {
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.main__most-recent__posts__post__info {
+    height: 93px;
+    width: 100%;
+    margin: 0;
+    border: 1px;
+}
+
+.main__most-recent__posts__post__info__title {
+
+}
