@@ -14,6 +14,7 @@ body {
     padding-top: 17px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .escape {
@@ -121,7 +122,7 @@ p {
     height: 89px;
     background: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
-        url("/css/images/footer.jpg");
+        url("/the_road_ahead/css/images/footer.jpg");
 }
 
 .bottom-panel {
@@ -135,20 +136,22 @@ p {
 .bottom-escape {
     width: 89px;
     height: 26px;
-    background-image: url("/css/images/Escape_down.svg");
+    background-image: url("/the_road_ahead/css/images/Escape_down.svg");
     display: inline-block;
     vertical-align: bottom;
 }
 
-.bottom-buttons {
+.bottom-navigation {
     width: 100%;
     display: inline-block;
     vertical-align: bottom;
     margin-right: -100%;
     text-align: right;
+    text-decoration: none;
 }
 
-.bottom-buttons a {
+.button {
+    padding-right: 20px;
     font-family: "Oxygen";
     font-weight: 400;
     font-size: 11px;
@@ -156,20 +159,4 @@ p {
     letter-spacing: 1px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
-}
-
-.bottom-home {
-    padding-right: 20px;
-}
-
-.bottom-categories {
-    padding-right: 20px;
-}
-
-.bottom-about {
-    padding-right: 20px;
-}
-
-.bottom-contact {
-    padding-right: 10px;
 }
