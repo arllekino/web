@@ -18,13 +18,6 @@ body {
     background-size: cover;
 }
 
-.head__photo {
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    z-index: 0;
-}
-
 .head__panel {
     width: 100%;
     height: 74px;
@@ -38,7 +31,7 @@ body {
 }
 
 .panel__navigation {
-    width: 377px;
+    gap: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,9 +84,8 @@ body {
 }
 
 .title__latest-posts {
-    height: 44px;
-    width: 167px;
     margin-top: 31px;
+    padding: 12px 31px 12px 31px;
     background-color: rgb(221, 120, 61);
     border-radius: 2px;
     display: flex;
@@ -110,24 +102,16 @@ body {
 .main-panel {
     min-height: 65px;
     width: 100%;
-    margin: 0;
+    gap: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.main-panel__navigation {
-    max-width: 960px;
-    gap: 25px;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.nabigation__main-link {
-    height: 46px;
-    width: 139px;
+.main-panel__link {
+    padding-top: 13px;
+    padding-bottom: 13px;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -193,16 +177,11 @@ body {
 }
 
 .featured-post__status {
-    width: 87px;
-    height: 26px;
     margin-top: 20px;
     margin-left: 20px;
+    padding: 6px 9px 7px 9px;
     border-radius: 2px;
     position: absolute;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: "Oxygen";
     font-size: 12px;
     font-weight: 400;
@@ -408,22 +387,22 @@ body {
     color: rgb(153, 153, 153);
 }
 
-.footer {
-    width: 100%;
+.footer__panel {
     height: 89px;
     display: flex;
-    justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("./img/footer.jpg");
+    justify-content: space-around;
+    align-items: center;
+    background: url("./img/footer.jpg");
+    background-color: rgba(37, 45, 46, 0.6);
+    background-blend-mode: darken;
     background-size: cover;
 }
 
-.footer__panel {
-    width: 960px;
-    display: flex;
-    justify-content: space-between;
+.link_dark {
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.link_dark {
-    color: rgba(255, 255, 255, 0.6)
+.escape_footer {
+    width: 92px;
+    height: 26px;
 }

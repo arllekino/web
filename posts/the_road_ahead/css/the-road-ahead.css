@@ -120,9 +120,9 @@ p {
 
 .footer {
     height: 89px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
-        url("/the_road_ahead/css/images/footer.jpg");
+    background-image: url("/the_road_ahead/css/images/footer.jpg");
+    background-color: rgba(37, 45, 46, 0.6);
+    background-blend-mode: darken;
 }
 
 .bottom-panel {
