@@ -74,7 +74,7 @@
         <div class="most-recent">
             <h2 class="most-recent__title">Most Recent</h2>
             <div class="most-recent__posts">
-                <a class="most-recent__post">
+                <a href="" class="most-recent__post">
                     <img src="./static/image/still-standing-tall.jpg" alt="Still Standing Tall"
                         class="most-recent-post__picture">
                     <div class="most-recent-post__info">
@@ -92,7 +92,7 @@
                         <h5 class="most-recent-description__date">9/25/2015</h5>
                     </div>
                 </a>
-                <a class="most-recent__post">
+                <a href="" class="most-recent__post">
                     <img src="./static/image/sunny-side-up.png" alt="Sunny Side Up"
                         class="most-recent-post__picture">
                     <div class="most-recent-post__info">
@@ -108,7 +108,7 @@
                         <h5 class="most-recent-description__date">9/25/2015</h5>
                     </div>
                 </a>
-                <a class="most-recent__post">
+                <a href="" class="most-recent__post">
                     <img src="./static/image/water-falls.png" alt="Water Falls" class="most-recent-post__picture">
                     <div class="most-recent-post__info">
                         <h3 class="info__title">Water Falls</h3>
@@ -123,7 +123,7 @@
                         <h5 class="most-recent-description__date">9/25/2015</h5>
                     </div>
                 </a>
-                <a class="most-recent__post">
+                <a href="" class="most-recent__post">
                     <img src="./static/image/through-the-mist.png" alt="Through the Mist"
                         class="most-recent-post__picture">
                     <div class="most-recent-post__info">
@@ -141,7 +141,7 @@
                         <h5 class="most-recent-description__date">9/25/2015</h5>
                     </div>
                 </a>
-                <a class="most-recent__post">
+                <a href="" class="most-recent__post">
                     <img src="./static/image/awaken-early.png" alt="Awaken Early" class="most-recent-post__picture">
                     <div class="most-recent-post__info">
                         <h3 class="info__title">Awaken Early</h3>
@@ -155,7 +155,7 @@
                         <h5 class="most-recent-description__date">9/25/2015</h5>
                     </div>
                 </a>
-                <a class="most-recent__post">
+                <a href="" class="most-recent__post">
                     <img src="./static/image/try-it-always.png" alt="Try it Always"
                         class="most-recent-post__picture">
                     <div class="most-recent-post__info">
