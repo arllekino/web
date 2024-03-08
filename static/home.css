@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("./img/head.png");
+    background-image: url("./image/head.png");
     background-size: cover;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .navigation__link {
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
@@ -63,7 +63,7 @@ body {
     width: 498px;
     margin-top: 0;
     text-align: center;
-    font-family: "Lora";
+    font-family: "Lora", Arial;
     font-weight: 400;
     font-size: 50px;
     line-height: 51px;
@@ -76,7 +76,7 @@ body {
     width: 504px;
     margin-top: 20px;
     text-align: center;
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
@@ -92,7 +92,7 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
@@ -116,7 +116,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Lora";
+    font-family: "Lora", Arial;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -148,7 +148,7 @@ body {
     justify-content: center;
     margin-top: 60px;
     text-align: center;
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
@@ -182,7 +182,7 @@ body {
     padding: 6px 9px 7px 9px;
     border-radius: 2px;
     position: absolute;
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 13px;
@@ -193,7 +193,7 @@ body {
 .featured-post__title {
     margin-top: 157px;
     margin-left: 20px;
-    font-family: "Lora";
+    font-family: "Lora", Arial;
     font-weight: 400;
     font-size: 27px;
     line-height: 30px;
@@ -203,7 +203,7 @@ body {
 .featured-post__line {
     margin-top: 6px;
     margin-left: 20px;
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
@@ -237,7 +237,7 @@ body {
 
 .featured-posts-autor__name {
     margin-left: 10px;
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 35px;
@@ -245,7 +245,7 @@ body {
 }
 
 .featured-posts-description__date {
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 35px;
@@ -254,11 +254,11 @@ body {
 }
 
 .post_the-road-ahead {
-    background-image: url(./img/the-road-ahead.png);
+    background-image: url(./image/the-road-ahead.png);
 }
 
 .post_from-top-down {
-    background-image: url(./img/from-top-down.png);
+    background-image: url(./image/from-top-down.png);
 }
 
 .most-recent {
@@ -276,7 +276,7 @@ body {
     justify-content: center;
     margin-top: 60px;
     text-align: center;
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
@@ -325,7 +325,7 @@ body {
     height: auto;
     margin-top: 14px;
     margin-left: 13px;
-    font-family: "Lora";
+    font-family: "Lora", Arial;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -338,7 +338,7 @@ body {
     height: auto;
     margin-top: 41px;
     margin-left: 13px;
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 19px;
@@ -372,7 +372,7 @@ body {
 }
 
 .most-recent-autor__name {
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 11px;
     line-height: 35px;
@@ -381,7 +381,7 @@ body {
 
 .most-recent-description__date {
     margin-right: 13px;
-    font-family: "Oxygen";
+    font-family: "Oxygen", sans-serif;
     font-size: 12px;
     line-height: 35px;
     color: rgb(153, 153, 153);
@@ -392,7 +392,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: url("./img/footer.jpg");
+    background: url("./image/footer.jpg");
     background-color: rgba(37, 45, 46, 0.6);
     background-blend-mode: darken;
     background-size: cover;

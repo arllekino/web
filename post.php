@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Road Ahead </title>
-    <link rel="stylesheet" href="css/the-road-ahead.css">
+    <link rel="stylesheet" href="./static/the-road-ahead.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
@@ -16,13 +16,13 @@
 
         <div class="panel">
             <a href="" class="escape">
-                <img src="./css/images/Escape.svg" alt="escape">
+                <img src="./static/image/escape_black.svg" alt="escape">
             </a>
             <div class="buttons">
-                <a href="" class="home">HOME</a>
-                <a href="" class="categories">CATEGORIES</a>
-                <a href="" class="about">ABOUT</a>
-                <a href="" class="contact">CONTACT</a>
+                <a href="" class="link-up">HOME</a>
+                <a href="" class="link-up">CATEGORIES</a>
+                <a href="" class="link-up">ABOUT</a>
+                <a href="" class="link-up">CONTACT</a>
             </div>
         </div>
         <h1 class="main-title">The Road Ahead</h1>
@@ -30,7 +30,7 @@
 
 
     </header>
-    <img src="./css/images/main_photo.jpg" alt="photo" class="main-photo">
+    <img src="./static/image/main-photo__the-road-ahead.jpg" alt="photo" class="main-photo">
     <main class="main">
         <p class="text container">
             Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind
@@ -76,7 +76,7 @@
     </main>
     <footer class="footer">
         <div class="bottom-panel">
-            <span class="bottom-escape"></span>
+            <img src="./static/image/escape.svg" alt="" class="down-escape">
             <div class="bottom-navigation">
                 <a href="" class="button">HOME</a>
                 <a href="" class="button">CATEGORIES</a>

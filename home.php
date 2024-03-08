@@ -3,20 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./posts_style/posts.css">
     <link rel="stylesheet" href="https://4ntonyuk.github.io/styles/reset.css">
+    <link rel="stylesheet" href="./static/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <title>Posts</title>
+    <title>Home</title>
 </head>
 
 <body>
     <header class="head">
         <div class="head__panel">
             <a href="" class="panel__escape">
-                <img src="./posts_style/img/escape.svg" alt="Escape">
+                <img src="./static/image/escape.svg" alt="Escape">
             </a>
             <nav class="panel__navigation">
                 <a href="" class="navigation__link">HOME</a>
@@ -43,13 +43,13 @@
         <div class="featured-posts">
             <h2 class="featured__title">Featured Posts</h2>
             <div class="featured-posts__posts">
-                <a href="./the_road_ahead/the-road-ahead.html" class="featured-post post_the-road-ahead">
+                <a href="./post.php" class="featured-post post_the-road-ahead">
                     <h3 class="featured-post__title">The Road Ahead</h3>
                     <h4 class="featured-post__line">The road ahead might be paved - it might not
                         be.</h4>
                     <div class="featured-post__description">
                         <div class="featured-posts-description__autor">
-                            <img src="./posts_style/img/autors/Mat_Vogels.svg" alt=""
+                            <img src="./static/image/autors/Mat_Vogels.svg" alt=""
                                 class="featured-posts-autor__photo">
                             <h5 class="featured-posts-autor__name">Mat Vogels</h5>
                         </div>
@@ -62,7 +62,7 @@
                     <h4 class="featured-post__line">Once a year, go someplace you’ve never been before.</h4>
                     <div class="featured-post__description">
                         <div class="featured-posts-description__autor">
-                            <img src="./posts_style/img/autors/William_Wong.svg" alt=""
+                            <img src="./static/image/autors/William_Wong.svg" alt=""
                                 class="featured-posts-autor__photo">
                             <h5 class="featured-posts-autor__name">William Wong</h5>
                         </div>
@@ -75,7 +75,7 @@
             <h2 class="most-recent__title">Most Recent</h2>
             <div class="most-recent__posts">
                 <a class="most-recent__post">
-                    <img src="./posts_style/img/still-standing-tall.jpg" alt="Still Standing Tall"
+                    <img src="./static/image/still-standing-tall.jpg" alt="Still Standing Tall"
                         class="most-recent-post__picture">
                     <div class="most-recent-post__info">
                         <h3 class="info__title">Still Standing Tall</h3>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="most-recent-post__description">
                         <div class="most-recent-description__autor">
-                            <img src="./posts_style/img/autors/William_Wong.svg" alt=""
+                            <img src="./static/image/autors/William_Wong.svg" alt=""
                                 class="most-recent-autor__photo">
                             <h5 class="most-recent-autor__name">William Wong
                             </h5>
@@ -93,7 +93,7 @@
                     </div>
                 </a>
                 <a class="most-recent__post">
-                    <img src="./posts_style/img/sunny-side-up.png" alt="Sunny Side Up"
+                    <img src="./static/image/sunny-side-up.png" alt="Sunny Side Up"
                         class="most-recent-post__picture">
                     <div class="most-recent-post__info">
                         <h3 class="info__title">Sunny Side Up</h3>
@@ -102,14 +102,14 @@
                     </div>
                     <div class="most-recent-post__description">
                         <div class="most-recent-description__autor">
-                            <img src="./posts_style/img/autors/Mat_Vogels.svg" alt="" class="most-recent-autor__photo">
+                            <img src="./static/image/autors/Mat_Vogels.svg" alt="" class="most-recent-autor__photo">
                             <h5 class="most-recent-autor__name">Mat Vogels</h5>
                         </div>
                         <h5 class="most-recent-description__date">9/25/2015</h5>
                     </div>
                 </a>
                 <a class="most-recent__post">
-                    <img src="./posts_style/img/water-falls.png" alt="Water Falls" class="most-recent-post__picture">
+                    <img src="./static/image/water-falls.png" alt="Water Falls" class="most-recent-post__picture">
                     <div class="most-recent-post__info">
                         <h3 class="info__title">Water Falls</h3>
                         <h4 class="info__line">We travel not to escape life, but for
@@ -117,14 +117,14 @@
                     </div>
                     <div class="most-recent-post__description">
                         <div class="most-recent-description__autor">
-                            <img src="./posts_style/img/autors/Mat_Vogels.svg" alt="" class="most-recent-autor__photo">
+                            <img src="./static/image/autors/Mat_Vogels.svg" alt="" class="most-recent-autor__photo">
                             <h5 class="most-recent-autor__name">Mat Vogels</h5>
                         </div>
                         <h5 class="most-recent-description__date">9/25/2015</h5>
                     </div>
                 </a>
                 <a class="most-recent__post">
-                    <img src="./posts_style/img/through-the-mist.png" alt="Through the Mist"
+                    <img src="./static/image/through-the-mist.png" alt="Through the Mist"
                         class="most-recent-post__picture">
                     <div class="most-recent-post__info">
                         <h3 class="info__title">Through the Mist</h3>
@@ -133,7 +133,7 @@
                     </div>
                     <div class="most-recent-post__description">
                         <div class="most-recent-description__autor">
-                            <img src="./posts_style/img/autors/William_Wong.svg" alt=""
+                            <img src="./static/image/autors/William_Wong.svg" alt=""
                                 class="most-recent-autor__photo">
                             <h5 class="most-recent-autor__name">William Wong
                             </h5>
@@ -142,21 +142,21 @@
                     </div>
                 </a>
                 <a class="most-recent__post">
-                    <img src="./posts_style/img/awaken-early.png" alt="Awaken Early" class="most-recent-post__picture">
+                    <img src="./static/image/awaken-early.png" alt="Awaken Early" class="most-recent-post__picture">
                     <div class="most-recent-post__info">
                         <h3 class="info__title">Awaken Early</h3>
                         <h4 class="info__line">Not all those who wander are lost.</h4>
                     </div>
                     <div class="most-recent-post__description">
                         <div class="most-recent-description__autor">
-                            <img src="./posts_style/img/autors/Mat_Vogels.svg" alt="" class="most-recent-autor__photo">
+                            <img src="./static/image/autors/Mat_Vogels.svg" alt="" class="most-recent-autor__photo">
                             <h5 class="most-recent-autor__name">Mat Vogels</h5>
                         </div>
                         <h5 class="most-recent-description__date">9/25/2015</h5>
                     </div>
                 </a>
                 <a class="most-recent__post">
-                    <img src="./posts_style/img/try-it-always.png" alt="Try it Always"
+                    <img src="./static/image/try-it-always.png" alt="Try it Always"
                         class="most-recent-post__picture">
                     <div class="most-recent-post__info">
                         <h3 class="info__title">Try it Always</h3>
@@ -165,7 +165,7 @@
                     </div>
                     <div class="most-recent-post__description">
                         <div class="most-recent-description__autor">
-                            <img src="./posts_style/img/autors/Mat_Vogels.svg" alt="" class="most-recent-autor__photo">
+                            <img src="./static/image/autors/Mat_Vogels.svg" alt="" class="most-recent-autor__photo">
                             <h5 class="most-recent-autor__name">Mat Vogels</h5>
                         </div>
                         <h5 class="most-recent-description__date">9/25/2015</h5>
@@ -175,7 +175,7 @@
         </div>
     </main>
     <footer class="footer__panel">
-        <img src="./posts_style/img/escape.svg" alt="Escape" class="escape_footer">
+        <img src="./static/image/escape.svg" alt="Escape" class="escape_footer">
         <nav class="panel__navigation">
             <a href="" class="navigation__link link_dark">HOME</a>
             <a href="" class="navigation__link link_dark">CATEGORIES</a>
