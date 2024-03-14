@@ -25,7 +25,7 @@ body {
     justify-content: space-around;
 }
 
-.panel__escape {
+.panel__logo {
     display: flex;
     align-items: center;
 }
@@ -219,7 +219,7 @@ body {
     justify-content: space-between;
 }
 
-.featured-posts-description__autor {
+.featured-posts-description__author {
     width: auto;
     height: 35px;
     display: flex;
@@ -229,13 +229,13 @@ body {
     text-decoration: none;
 }
 
-.featured-posts-autor__photo {
+.featured-posts-author__photo {
     height: auto;
     width: auto;
     border-radius: 13px;
 }
 
-.featured-posts-autor__name {
+.featured-posts-author__name {
     margin-left: 10px;
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
@@ -251,14 +251,6 @@ body {
     line-height: 35px;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
-}
-
-.post_the-road-ahead {
-    background-image: url(./image/the-road-ahead.png);
-}
-
-.post_from-top-down {
-    background-image: url(./image/from-top-down.png);
 }
 
 .most-recent {
@@ -334,7 +326,7 @@ body {
 }
 
 .info__line {
-    width: auto;
+    width: 247px;
     height: auto;
     margin-top: 41px;
     margin-left: 13px;
@@ -357,7 +349,7 @@ body {
     border-top: 1px solid rgb(229, 229, 229);
 }
 
-.most-recent-description__autor {
+.most-recent-description__author {
     width: 102px;
     height: 35px;
     display: flex;
@@ -366,12 +358,12 @@ body {
     margin-left: 13px;
 }
 
-.most-recent-autor__photo {
+.most-recent-author__photo {
     width: 26px;
     border-radius: 13px;
 }
 
-.most-recent-autor__name {
+.most-recent-author__name {
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-size: 11px;
@@ -402,7 +394,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.escape_footer {
+.logo_footer {
     width: 92px;
     height: 26px;
 }

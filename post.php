@@ -15,7 +15,7 @@
     <header class="head">
 
         <div class="panel">
-            <a href="" class="escape">
+            <a href="./home.php" class="logo">
                 <img src="./static/image/escape_black.svg" alt="escape">
             </a>
             <div class="buttons">
@@ -76,7 +76,7 @@
     </main>
     <footer class="footer">
         <div class="bottom-panel">
-            <img src="./static/image/escape.svg" alt="" class="down-escape">
+            <img src="./static/image/escape.svg" alt="">
             <div class="bottom-navigation">
                 <a href="" class="button">HOME</a>
                 <a href="" class="button">CATEGORIES</a>

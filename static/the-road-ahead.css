@@ -16,7 +16,7 @@ body {
     margin-right: auto;   
 }
 
-.escape {
+.logo {
     width: 89px;
     display: inline-block;
     vertical-align: bottom;
@@ -116,9 +116,7 @@ p {
     margin-right: auto;
 }
 
-.down-escape {
-    margin-left: 0;
-}
+
 
 .bottom-navigation {
     width: auto;
