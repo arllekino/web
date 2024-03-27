@@ -1,22 +1,26 @@
 <?php
-    $DatePost = date("F j, Y", $featured_post['date'])
-?>
-<a href="<?= $featured_post['url'] ?>" class="featured-post" style="background-image: url('<?= $featured_post['img_modifier'] ?>')">
+$DatePost = date("F j, Y", $FeaturedPostContent['date'])
+    ?>
+<a href="post?id=<?= $FeaturedPostContent['id'] ?>" class="featured-post"
+    style="background-image: url('<?= $FeaturedPostContent['img'] ?>')">
+    <?php if ($FeaturedPostContent['modifier'] == 'adventure'): ?>
+        <span class="featured-post__status">ADVENTURE</span>
+    <?php endif; ?>
     <h3 class="featured-post__title">
-        <?= $featured_post['title'] ?>
+        <?= $FeaturedPostContent['title'] ?>
     </h3>
     <h4 class="featured-post__line">
-        <?= $featured_post['subtitle'] ?>
+        <?= $FeaturedPostContent['subtitle'] ?>
     </h4>
     <div class="featured-post__description">
         <div class="featured-posts-description__author">
-            <img src="<?= $featured_post['img_author'] ?>" alt="" class="featured-posts-author__photo">
-            <h5 class="featured-posts-author__name">
-                <?= $featured_post['author'] ?>
-            </h5>
+            <img src="<?= $FeaturedPostContent['img_author'] ?>" alt="" class="featured-posts-author__photo">
+            <span class="featured-posts-author__name">
+                <?= $FeaturedPostContent['author'] ?>
+            </span>
         </div>
-        <h5 class="featured-posts-description__date">
+        <span class="featured-posts-description__date">
             <?= $DatePost ?>
-        </h5>
+        </span>
     </div>
 </a>

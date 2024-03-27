@@ -5,6 +5,7 @@
         phpinfo(); 
         exit;
       break;
+      
     }
   }
 ?>

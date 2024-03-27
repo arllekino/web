@@ -3,7 +3,6 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: none;
-
 }
 
 .head {
@@ -14,19 +13,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("./image/head.png");
+    background-image: url("./img/head.png");
     background-size: cover;
 }
 
-.head__panel {
+.panel {
     width: 100%;
     height: 74px;
     display: flex;
     justify-content: space-around;
-}
-
-.panel__logo {
-    display: flex;
     align-items: center;
 }
 
@@ -47,7 +42,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.head__title {
+.title {
     width: 940px;
     height: 159px;
     margin-top: 110px;
@@ -141,7 +136,7 @@ body {
     align-items: center;
 }
 
-.featured__title {
+.featured-posts__title {
     width: 188px;
     height: 43px;
     display: flex;
@@ -252,6 +247,15 @@ body {
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
 }
+
+.post_the-road-ahead {
+    background-image: url('./img/the-road-ahead.png');
+}
+
+.post_from-top-down {
+    background-image: url('./img/from-top-down.png');
+}
+
 
 .most-recent {
     max-width: 960px;
@@ -384,7 +388,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: url("./image/footer.jpg");
+    background: url("./img/footer.jpg");
     background-color: rgba(37, 45, 46, 0.6);
     background-blend-mode: darken;
     background-size: cover;

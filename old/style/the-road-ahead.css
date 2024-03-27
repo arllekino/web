@@ -4,8 +4,15 @@ body {
     width: 100%;
 }
 
-.panel {
-    max-width: 1000px;
+.head {
+    height: 360px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head__panel {
+    width: 940px;
     height: 40px;
     padding-top: 17px;
     margin-left: auto;
@@ -14,18 +21,18 @@ body {
 
 .logo {
     width: 89px;
-    display: inline-block;
     vertical-align: bottom;
-    margin-bottom: -10px;
     text-decoration: none;
 }
 
-.buttons {
+.panel__navigation {
     width: auto;
+    margin-top: 5px;
+    display: block;
     float: right;
 }
 
-.link-up {
+.navigation__link-up {
     margin-right: 30px;
     font-family: "Oxygen", "Times New Roman";
     font-weight: 400;
@@ -35,14 +42,7 @@ body {
     color: rgb(46, 46, 46);
 }
 
-.head {
-    height: 360px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.main-title {
+.head__title {
     width: 498px;
     height: 51px;
     margin-top: 82px;
@@ -56,7 +56,7 @@ body {
     text-align: center;
 }
 
-.subtitle {
+.head__subtitle {
     width: 504px;
     height: 20px;
     margin-top: 20px;
@@ -68,6 +68,12 @@ body {
     line-height: 20px;
     text-align: center;
     color: rgba(46, 46, 46, 0.63);
+}
+
+.main-photo {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 140px;
 }
 
 .text {
@@ -82,40 +88,34 @@ body {
     color: rgb(16, 19, 21);
 }
 
-.main-photo {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 140px;
-}
-
 .bottom-panel {
     width: 100%;
     height: 34px;
     padding: 28px 0 28px 0 ;
     text-decoration: none;
-    background-image: url("./image/footer.jpg");
+    background-image: url("./img/footer.jpg");
     background-color: rgba(37, 45, 46, 0.6);
     background-blend-mode: darken;
     background-size: cover;
 }
 
-.bottom-escape{
+.bottom-panel__escape{
     margin-top: 5px;
-    margin-left: 350px;
+    margin-left: 300px;
 }
 
-.bottom-navigation {
+.bottom-panel__navigation {
     margin-top: 4px;
-    width: auto;
     margin-right: 300px;
+    width: auto;
     display: block;
     text-align: right;
     text-decoration: none;
     float: right;
 }
 
-.link-down {
-    padding-right: 20px;
+.navigation__link-down {
+    margin-right: 20px;
     font-family: "Oxygen", "Times New Roman";
     font-weight: 400;
     font-size: 12px;

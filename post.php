@@ -1,39 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Road Ahead </title>
-    <link rel="stylesheet" href="./static/the-road-ahead.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <header class="head">
-
-        <div class="panel">
-            <a href="./home.php" class="logo">
-                <img src="./static/image/escape_black.svg" alt="escape">
-            </a>
-            <div class="buttons">
-                <a href="" class="link-up">HOME</a>
-                <a href="" class="link-up">CATEGORIES</a>
-                <a href="" class="link-up">ABOUT</a>
-                <a href="" class="link-up">CONTACT</a>
-            </div>
-        </div>
-        <h1 class="main-title">The Road Ahead</h1>
-        <h2 class="subtitle">The road ahead might be paved - it might not be.</h2>
-
-
-    </header>
-    <img src="./static/image/main-photo__the-road-ahead.jpg" alt="photo" class="main-photo">
-    <main class="main">
-        <p class="text container">
-            Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind
+$postId = $_GET["id"];
+$post = [
+    'title' => 'The Road Ahead',
+    'subtitle' => 'The road ahead might be paved - it might not be.',
+    'img' => './static/image/main-photo__the-road-ahead.jpg',
+    'text' => 'Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind
             of their white covering of frost, and they seemed to lean towards each other, black and ominous, in the
             fading light. A vast silence reigned over the land. The land itself was a desolation, lifeless, without
             movement, so lone and cold that the spirit of it was not even that of sadness. There was a hint in it of
@@ -69,23 +41,62 @@
             from their frozen breath that their faces were not discernible. This gave them the seeming of ghostly
             masques, undertakers in a spectral world at the funeral of some ghost. But under it all they were men,
             penetrating the land of desolation and mockery and silence, puny adventurers bent on colossal adventure,
-            pitting themselves against the might of a world as remote and alien and pulseless as the abysses of space.
-            <br>
-            <br>
-        </p>
-    </main>
-    <footer class="footer">
-        <div class="bottom-panel">
-            <img src="./static/image/escape.svg" alt="">
-            <div class="bottom-navigation">
-                <a href="" class="button">HOME</a>
-                <a href="" class="button">CATEGORIES</a>
-                <a href="" class="button">ABOUT</a>
-                <a href="" class="button">CONTACT</a>
+            pitting themselves against the might of a world as remote and alien and pulseless as the abysses of space.'
+]
+    ?>
+
+    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Road Ahead
+        <?php
+           echo "id=$postId";    
+        ?>
+    </title>
+    <link rel="stylesheet" href="./static/the-road-ahead.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="head">
+        <div class="panel">
+            <a href="home" class="logo">
+                <img src="./static/image/escape_black.svg" alt="escape">
+            </a>
+            <div class="buttons">
+                <a href="./home" class="link-up">HOME</a>
+                <a href="" class="link-up">CATEGORIES</a>
+                <a href="" class="link-up">ABOUT</a>
+                <a href="" class="link-up">CONTACT</a>
             </div>
-
         </div>
+        <h1 class="main-title">
+            <?= $post['title']; ?>
+        </h1>
+        <h2 class="subtitle">
+            <?= $post['subtitle'] ?>
+        </h2>
 
+
+    </header>
+    <img src="<?= $post['img']?>" alt="Photo" class="main-photo">
+    <main class="text">
+        <?= $post['text'] ?>
+    </main>
+    <footer class="bottom-panel">
+        <img src="./static/image/escape.svg" alt="escape" class="bottom-escape">
+        <div class="bottom-navigation">
+            <a href="" class="link-down">HOME</a>
+            <a href="" class="link-down">CATEGORIES</a>
+            <a href="" class="link-down">ABOUT</a>
+            <a href="" class="link-down">CONTACT</a>
+        </div>
     </footer>
 </body>
 

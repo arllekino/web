@@ -50,7 +50,6 @@ echo 'IP Address: ' . $ipAddress . '</br>';
 echo '<br>---------------<br>';
 
 // 5. Распечатаем все GET-параметры
-echo(count($_GET));
 foreach ($_GET as $key => $value) {
     echo "{$key} = {$value} </br>";
   } 
