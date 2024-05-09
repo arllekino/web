@@ -93,7 +93,7 @@ body {
     height: 34px;
     padding: 28px 0 28px 0 ;
     text-decoration: none;
-    background-image: url("./image/footer.jpg");
+    background-image: url("../image/footer.jpg");
     background-color: rgba(37, 45, 46, 0.6);
     background-blend-mode: darken;
     background-size: cover;

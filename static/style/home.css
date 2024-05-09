@@ -3,7 +3,6 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: none;
-
 }
 
 .head {
@@ -14,7 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("./image/head.png");
+    background-image: url("../image/head.png");
     background-size: cover;
 }
 
@@ -87,6 +86,7 @@ body {
     margin-top: 31px;
     padding: 12px 31px 12px 31px;
     background-color: rgb(221, 120, 61);
+    border: 0;
     border-radius: 2px;
     display: flex;
     justify-content: center;
@@ -107,6 +107,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
 }
 
 .main-panel__link {
@@ -230,8 +231,8 @@ body {
 }
 
 .featured-posts-author__photo {
-    height: auto;
-    width: auto;
+    height: 23px;
+    width: 23px;
     border-radius: 13px;
 }
 
@@ -384,7 +385,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: url("./image/footer.jpg");
+    background: url("../image/footer.jpg");
     background-color: rgba(37, 45, 46, 0.6);
     background-blend-mode: darken;
     background-size: cover;
