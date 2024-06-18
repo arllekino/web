@@ -1,3 +1,20 @@
+<?php
+function authBySession(): void
+{  
+    session_name('auth');
+    session_start();
+    $userId = $_SESSION['user_id'] ?? null;  
+    if ($userId) {
+        http_response_code(200);
+    } else {
+        header('Location:' . '/login', true, 303);
+        exit();
+    } 
+}
+
+authBySession();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,12 +34,12 @@
             <img src="./static/image/logo-author.svg" alt="" class="panel__logo">
             <div class="panel__link">
                 <a href="" class="link__user">Y</a>
-                <a href="" class="link__exit"></a>
+                <button href="" class="link__exit"></button>
             </div>
         </div>
     </header>
     <main>
-        <form action="" class="post-info">
+        <form action="/api.php" class="post-info">
             <div class="post-info__headline">
                 <div class="titling">
                     <h1 class="titling__main-title">New Post</h1>
@@ -47,38 +64,43 @@
                         <div class="input__post">
                             <label for="input__title" class="input__label-string">Title</label>
                             <input type="text" name="title" id="input__title" class="input__string" placeholder="New post" />
+                            <span class="post-info__empty-input" id="post-info__empty-title">Title is required.</span>
                         </div>
                         <div class="input__post">
                             <label for="input__description" class="input__label-string">Short description</label>
                             <input type="text" name="subtitle" id="input__description" class="input__string" placeholder="Please, enter any description" />
+                            <span class="post-info__empty-input" id="post-info__empty-description">Description is required.</span>
                         </div>
                         <div class="input__post">
                             <label for="input__author-name" class="input__label-string">Author name</label>
                             <input type="text" name="author" id="input__author-name" class="input__string" placeholder="John Smith" />
+                            <span class="post-info__empty-input" id="post-info__empty-author-name">Author name is required.</span>
                         </div>
                         <div class="input__post">
                             <span class="input__sign-string">Author photo</span>
                             <span id="input__upload-author-photo">
-                                <label for="input__author-photo" class="input__author-photo-label">
+                                <label for="input__author-photo" class="input__author-photo__label">
                                     <img src="./static/image/author-upload.svg" alt="" class="input__author-output" />
                                     <span class="label__string-black">Upload</span>
                                 </label>
                             </span>
                             <span class="input__loaded-author-photo">
-                                <label for="input__post-image" class="upload-post-image__label">
+                                <label for="input__author-photo" class="upload-author-photo__label">
                                     <img src="./static/image/camera.svg" alt="">
                                     <span class="label__string-black">Upload New</span>
                                 </label>
-                                <span class="remove">
+                                <button type="button" id="remove__author-photo" class="remove">
                                     <img src="./static/image/junk.svg" alt="">
-                                    <button type="button" id="remove__post-image" class="remove__string">Remove</button>
-                                </span>
+                                    <span class="remove__string">Remove</span>
+                                </button>
                             </span>
-                            <input type="file" name="image_author" id="input__author-photo" />
+                            <input type="file" name="author_photo" id="input__author-photo" accept=".png,.jpeg,.gif"/>
+                            <span class="post-info__empty-input" id="post-info__empty-author-photo">Author photo is required.</span>
                         </div>
                         <div class="input__post">
                             <label for="input__publish-date" class="input__label-string">Publish date</label>
                             <input type="date" name="publish_date" id="input__publish-date" />
+                            <span class="post-info__empty-input" id="post-info__empty-publish-date">Publish date is required.</span>
                         </div>
                         <div class="input__post">
                             <span class="input__sign-string">Hero image</span>
@@ -89,16 +111,17 @@
                                 <span class="input__comment">Size up to 10mb. Format: png, jpeg, gif.</span>
                             </div>
                             <div class="input__loaded-post-image">
-                                <label for="input__author-photo" class="input__author-photo-label">
+                                <label for="input__post-image" class="upload-post-image__label">
                                     <img src="./static/image/camera.svg" alt="">
                                     <span class="label__string-black">Upload New</span>
                                 </label>
-                                <span class="remove">
+                                <button type="button" id="remove__post-image" class="remove">
                                     <img src="./static/image/junk.svg" alt="">
-                                    <button type="button" id="remove__author-photo" class="remove__string">Remove</button>
-                                </span>
+                                    <span class="remove__string">Remove</span>
+                                </button>
                             </div>
                             <input type="file" name="post_image" id="input__post-image" accept=".png,.jpeg,.gif" />
+                            <span class="post-info__empty-input" id="post-info__empty-post-image">Post image is required.</span>
                         </div>
                         <div class="input__post">
                             <span class="input__sign-string">Hero image</span>
@@ -113,12 +136,13 @@
                                     <img src="./static/image/camera.svg" alt="">
                                     <span class="label__string-black">Upload New</span>
                                 </label>
-                                <span class="remove">
+                                <button type="button" id="remove__card-image" class="remove">
                                     <img src="./static/image/junk.svg" alt="">
-                                    <button type="button" id="remove__card-image" class="remove__string">Remove</button>
-                                </span>
+                                    <span class="remove__string">Remove</span>
+                                </button>
                             </div>
                             <input type="file" name="card_image" id="input__card-image" accept=".png,.jpeg,.gif" />
+                            <span class="post-info__empty-input" id="post-info__empty-card-image">Card image is required.</span>
                         </div>
                     </div>
                     <div class="main-info__preview-area">
@@ -162,6 +186,7 @@
                 <h2 class="content__title">Content</h2>
                 <label for="input__main-text" class="input__label-main-text">Post content (plain text)</label>
                 <textarea name="content" id="input__main-text" placeholder="Type anything you want ..."></textarea>
+                <span class="post-info__empty-input" id="post-info__empty-content">Content text is required.</span>
             </div>
         </form>
     </main>

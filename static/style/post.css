@@ -5,28 +5,27 @@ body {
 }
 
 .panel {
-    max-width: 1000px;
-    height: 40px;
-    padding-top: 17px;
-    margin-left: auto;
-    margin-right: auto;   
+    height: 74px;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
 }
 
-.logo {
-    width: 89px;
-    display: inline-block;
-    vertical-align: bottom;
-    margin-bottom: -10px;
-    text-decoration: none;
+.panel__link {
+    height: 26px;
 }
 
-.buttons {
-    width: auto;
-    float: right;
+.panel__logo {
+    height: 26px;
 }
 
-.link-up {
-    margin-right: 30px;
+.panel__navigation {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.navigation__link {
     font-family: "Oxygen", "Times New Roman";
     font-weight: 400;
     font-size: 12px;
@@ -43,8 +42,6 @@ body {
 }
 
 .main-title {
-    width: 498px;
-    height: 51px;
     margin-top: 82px;
     margin-left: auto;
     margin-right: auto;
@@ -57,8 +54,6 @@ body {
 }
 
 .subtitle {
-    width: 504px;
-    height: 20px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -72,9 +67,9 @@ body {
 
 .text {
     max-width: 960px;
-    height: auto;
-    padding-bottom: 135px;
+    padding: 0 25px 135px 25px;
     margin: 0 auto;
+    text-align: justify;
     font-family: "Oxygen", "Times New Roman";
     font-weight: 400;
     font-size: 24px;
@@ -89,38 +84,66 @@ body {
 }
 
 .bottom-panel {
-    width: 100%;
-    height: 34px;
-    padding: 28px 0 28px 0 ;
-    text-decoration: none;
+    height: auto;
     background-image: url("../image/footer.jpg");
     background-color: rgba(37, 45, 46, 0.6);
     background-blend-mode: darken;
     background-size: cover;
 }
 
-.bottom-escape{
-    margin-top: 5px;
-    margin-left: 350px;
+.panel__navigation {
+    display: flex;
+    gap: 40px;
 }
 
-.bottom-navigation {
-    margin-top: 4px;
-    width: auto;
-    margin-right: 300px;
-    display: block;
-    text-align: right;
-    text-decoration: none;
-    float: right;
-}
-
-.link-down {
-    padding-right: 20px;
-    font-family: "Oxygen", "Times New Roman";
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 26px;
-    letter-spacing: 1px;
-    text-decoration: none;
+.navigatoin__link_dark {
     color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 420px) {
+    .panel {
+        gap: 30%;
+        justify-content: space-between;
+    }
+
+    .panel__navigation {
+        width: auto;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .panel {
+        gap: 35%;
+        justify-content: space-around;
+    }
+
+    .panel__navigation {
+        width: 300px;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .panel {
+        gap: 40%;
+        justify-content: space-around;
+    }
+
+    .panel__navigation {
+        width: 300px;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .panel {
+        gap: 500px;
+        justify-content: center;
+    }
+
+    .panel__navigation {
+        width: 300px;
+        flex-direction: row;
+    }
 }

@@ -1,0 +1,203 @@
+body {
+    background: url(./../image/login-background.png) rgba(66, 70, 73, 0.4);
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__title {
+    height: auto;
+    padding: 0 30px;
+}
+
+.title__logo {
+    width: 232px;
+}
+
+.title__description {
+    margin-top: 7px;
+    display: block;
+    font-family: 'Oxygen', 'Times New Roman';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 38px;
+    color: rgb(255, 255, 255);
+}
+
+.main__form {
+    height: 560px;
+    background: rgb(255, 255, 255);
+    padding: 74px 40px 0 40px;
+}
+
+.form__title {
+    font-family: 'Lora', Arial;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.form__email {
+    margin-top: 40px;
+}
+
+.form__password {
+    margin-top: 40px;
+}
+/* добавить бэк */
+.form__label {
+    font-family: 'Oxygen', 'Times New Roman';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(122, 122, 122, 1);
+}
+
+.form__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    padding: 4px 8px;
+    font-family: 'Oxygen', 'Times New Roman';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+.form__input:focus {
+    background: rgb(247, 247, 247);
+    border-bottom: 1px solid rgba(46, 46, 46, 1)
+}
+
+.form__button {
+    margin-top: 40px;
+    padding: 12px 24px 12px 24px;
+    border-radius: 3px;
+    background: rgba(221, 120, 63, 1);
+    font-family: 'Oxygen', 'Times New Roman';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.form__incorrect {
+    display: none;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 10px 12px;
+    background: rgb(255, 235, 234);
+    border-left: 2px solid rgb(232, 105, 97);
+    font-family: 'Oxygen', 'Times New Roman';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.incorrect__message {
+    margin-left: 10px;
+    font-family: 'Oxygen', 'Times New Roman';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.form__valid-email,
+.form__valid-password {
+    display: none;
+    margin-top: 5px;
+    font-family: 'Oxygen', 'Times New Roman';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+@media screen and (min-width: 420px) {
+    body {
+        justify-content: center;
+    }
+
+    .main {
+        max-width: 450px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .title__logo {
+        margin-top: 0px;
+    }
+
+    .main__form {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        justify-content: center;
+    }
+
+    .main {
+        max-width: 480px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .title__logo {
+        margin-top: 0px;
+    }
+
+    .main__form {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        justify-content: none;
+    }
+
+    .main {
+        max-width: 100%;
+        flex-direction: row;
+        gap: 200px;
+    }
+
+    .title__logo {
+        margin-top: 200px;
+    }
+
+    .main__form {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    body {
+        justify-content: none;
+    }
+
+    .main {
+        max-width: 100%;
+        flex-direction: row;
+        gap: 200px;
+    }
+
+    .title__logo {
+        margin-top: 200px;
+    }
+
+    .main__form {
+        width: 480px;
+    }
+}
